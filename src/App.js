@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import Headers from "./Headers";
@@ -6,14 +7,18 @@ import Headers from "./Headers";
 function App() {
   return (
     <div className="App">
-      <h1>Hey</h1>
-      {/* Header*/}
       <Headers />
-      {/* Tinder Cards*/}
-      {/* Buttons below tinder cards*/}
+      <Router>
+        <Switch>
+          <Route path="/chat"></Route>
+          <Route path="/"></Route>
+        </Switch>
+        {/* Tinder Cards*/}
+        {/* Buttons below tinder cards*/}
 
-      {/* Chats Screen*/}
-      {/* Individual chat screen*/}
+        {/* Chats Screen*/}
+        {/* Individual chat screen*/}
+      </Router>
     </div>
   );
 }

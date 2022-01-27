@@ -28,7 +28,7 @@ function ChatScreen() {
     <>
       <div className="chatScreen">
         <p className="chatScreen__title">
-          YOU MATCHED WITH MARILYN MONROE ON 15/10/21
+          YOU MATCHED WITH MARILYN MONROE ON 15/10/21 ciao mtf
         </p>
         {messages.map((e) =>
           e.name ? (
